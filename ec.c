@@ -1,12 +1,12 @@
 #include <stdio.h>
 
 // Make the program "logo"
-const char *eggsAscii = " ..   ..   ..   ..   ..   ..\n"
+static const char *eggsAscii = " ..   ..   ..   ..   ..   ..\n"
 			".  . .  . .  . .  . .  . .  .\n"
 			" ..   ..   ..   ..   ..   ..";
 
 // Declare functions
-int getIntInput(char* prompt);
+static int getIntInput(char* prompt);
 
 int main(void) {
   // Print some info and the "logo"
@@ -39,7 +39,7 @@ eggPrice);
 // Gets an integer entered in stdin
 // prompt: text displayed before the input is to be entered
 // Returns the integer entered
-int getIntInput(char* prompt) {
+static int getIntInput(char* prompt) {
   // Print the prompt
   printf("%s", prompt);
 
