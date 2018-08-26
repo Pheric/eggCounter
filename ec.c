@@ -10,7 +10,7 @@ int getIntInput(char* prompt);
 
 int main(void) {
   // Print some info and the "logo"
-  printf("\nEggCounter (c) Eric Graham, 2018\n%s\n\n", eggsAscii);
+  printf("\nEggCounter -- 2018\n%s\n\n", eggsAscii);
 
   // Provide some context for the user
   printf("How many egg cartons would you like?\n");
@@ -52,7 +52,3 @@ int getIntInput(char* prompt) {
 
   return ret;
 }
-
-// Am I taking too much initiative with this assignment?
-// I realize it may take longer to grade and I'm trying
-// things we haven't yet learned.
