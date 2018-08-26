@@ -8,9 +8,10 @@ static const char YELLOW[] = "\x1b[33m", \
 	RESET[] = "\x1b[0m";
 
 // Make the program "logo"
-static const char *eggsAscii = " ..   ..   ..   ..   ..   ..\n"
-			".  . .  . .  . .  . .  . .  .\n"
-			" ..   ..   ..   ..   ..   ..";
+static const char *eggsAscii = \
+	" ..   ..   ..   ..   ..   ..\n"
+	".  . .  . .  . .  . .  . .  .\n"
+	" ..   ..   ..   ..   ..   ..";
 
 // Declare functions
 static int getIntInput(char* prompt);
@@ -40,7 +41,7 @@ RESET);
   float eggPrice = 2.67; // Derived from the price of a dozen on Amazon
 
   printf("--------------------------\n");
-  printf("Total Price (excl. tax): %s$%.2f%s ($%.2f / egg)\n\n", 
+  printf("Total Price (excl. tax):\n\t%s$%.2f%s ($%.2f / egg)\n\n", 
 GREEN, totalEggCount * eggPrice, RESET, 
 eggPrice);
 }
