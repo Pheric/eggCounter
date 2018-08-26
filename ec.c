@@ -41,9 +41,8 @@ RESET);
   float eggPrice = 2.67; // Derived from the price of a dozen on Amazon
 
   printf("--------------------------\n");
-  printf("Total Price (excl. tax):\n\t%s$%.2f%s ($%.2f / egg)\n\n", 
-GREEN, totalEggCount * eggPrice, RESET, 
-eggPrice);
+  printf("Total Price (excl. tax):\n\t%s$%.2f%s ($%.2f / egg)\n\n", \
+	GREEN, totalEggCount * eggPrice, RESET, eggPrice);
 }
 
 // Gets an integer entered in stdin
